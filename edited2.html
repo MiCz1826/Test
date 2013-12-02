@@ -1,0 +1,635 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0041)http://html5-cart.com/demo-cart-mode.html -->
+<html lang="en-us"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8"><title>HTML5 Add to Cart Buttons Demo | HTML5 Shopping Cart Web Component by Martin Ivanov</title><!--[if lt IE 9]><script src="lib/html5shiv/html5shiv.js"></script><![endif]--><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"><meta name="description" content="HTML5 Add to Cart Buttons Demo"><meta name="keywords" content="html5 add to cart buttons demo, html5 add to cart buttons API, javascript add to cart buttons demo, js add to cart buttons API, shopping cart widget demo"><link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/acidmartin" title="Dev Blog of Martin Ivanov"><link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/acidjs" title="Acid.JS Web UI Library"><link rel="stylesheet" href="http://html5-cart.com/server/load-css.php?files=../styles/styles.min.css"><link rel="stylesheet" href="http://html5-cart.com/AcidJs.ShoppingCart/styles/styles.min.css"><script type="text/javascript" async="" src="./HTML5 Add to Cart Buttons Demo   HTML5 Shopping Cart Web Component by Martin Ivanov_files/dc.js"></script><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-17572030-12']);
+_gaq.push(['_setDomainName', 'html5-cart.com']);
+_gaq.push(['_trackPageview']);
+(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script><link rel="stylesheet" href="http://html5-cart.com/pages/demo-cart-mode/styles.css"><style> .page-demo-cart-mode .nav-demo-cart-mode { border-bottom-color: #f56727; } </style><style>.acidjs-reflections span{background:-webkit-linear-gradient(#fff,rgba(255,255,255,.5)90%);background:-moz-linear-gradient(#fff,rgba(255,255,255,.5)90%);background:-ms-linear-gradient(#fff,rgba(255,255,255,.5)90%);background:-o-linear-gradient(#fff,rgba(255,255,255,.5)90%);background:linear-gradient(#fff,rgba(255,255,255,.5)90%)}</style></head><body class="page-demo-cart-mode"><div class="site-wrapper"><!--[if lt IE 8 ]><section class="info-bar align-center"><p>To use this website properly, please, use a more recent version of Internet Explorer.</p></section><![endif]--><header><h1><a href="http://html5-cart.com/">HTML<sup>5</sup> Shopping Cart</a></h1>
+</header>
+<nav>
+<ul>
+<li>
+<a href="http://html5-cart.com/" class="nav-default-page">Home</a>
+</li>
+<li><a href="http://html5-cart.com/purchase.html" class="nav-purchase">Purchase</a>
+</li>
+</ul>
+<div class="checkout-placeholder">
+<div class="acidjs-shopping-cart-dropdown">
+<div class="acidjs-shopping-cart-dropdown-inner-wrapper">
+    <h4 title="0 items">
+        <b>
+            <span><!-- / --></span><strong>0</strong>
+        </b>
+    </h4>
+    
+<div class="acidjs-shopping-cart-dropdown-list acidjs-shopping-cart-dropdown-hidden">
+        
+<div class="acidjs-shopping-cart-checking-out-overlay" title="Contacting ExampleProvider. Please, wait and do not reload the page.">
+            <div><!-- / --></div>
+        </div>
+        <ul></ul>
+        <div class="acidjs-shopping-cart-dropdown-list-controls">
+            <ul>
+                <li class="acidjs-float-left">
+                    <button name="update-cart" title="Update Cart" disabled="disabled">Update Cart</button>
+                </li>
+                <li class="acidjs-float-left">
+                    <button name="go-to-checkout" title="Checkout" disabled="disabled">Checkout</button></li>
+                <li class="acidjs-float-right">
+                    <h5>
+                        <span>total:</span> <b>$</b><strong>0.00</strong> <em>USD</em>
+                    </h5>
+                </li>
+            </ul>
+        </div>
+    <div class="acidjs-shopping-cart-credits">Powered by <a title="Visit http://html5-cart.com/" href="http://html5-cart.com/" target="_blank">HTML5 Shopping Cart</a></div></div>
+</div></div></div></nav><div class="site-content"><noscript>This website as well as HTML5 Cart make heavy use of JavaScript, which is disabled in your browser. For complete experience, please, enable JavaScript and reload the page.</noscript><h2>HTML5 Add to Cart Buttons Demo</h2>
+<section><h3>Item 1</h3>
+<button class="acidjs-add-to-cart acidjs-add-to-cart-green" data-item-id="3ab87f2a-22c7-4a40-a88c-f3b0192725b6">
+<span>add to cart</span>
+</button><h3>Item 2</h3>
+<button class="acidjs-add-to-cart acidjs-add-to-cart-gold" data-item-id="e58ab490-c439-49f9-a721-ba20d0825a8c">
+<span>add to cart</span>
+</button><h3>Item 3</h3>
+<button class="acidjs-add-to-cart acidjs-add-to-cart-teal" data-item-id="9a3a0626-19e8-40e0-bd43-eabc1732066c"><span>add to cart</span>
+</button><h3>Item 4</h3>
+<button class="acidjs-add-to-cart acidjs-add-to-cart-blue" data-item-id="d0bad4a1-b500-4b59-8e9d-d0dfe2e31e41"><span>add to cart</span>
+</button><h3>Item 5</h3>
+<button class="acidjs-add-to-cart acidjs-add-to-cart-violet" data-item-id="f374b7f4-c1fe-4403-8705-ede9645a1563"><span>add to cart</span>
+</button></section>
+<section>
+<div class="acidjs-shopping-cart acidjs-shopping-cart-mode-cart"><div>
+    <ul class="acidjs-shopping-cart-items"><li data-bind="{&quot;index&quot;:&quot;0&quot;}" class="acidjs-shopping-cart-item item-3ab87f2a-22c7-4a40-a88c-f3b0192725b6" data-id="3ab87f2a-22c7-4a40-a88c-f3b0192725b6">
+    <div class="acidjs-shopping-cart-item-inner-wrapper">
+        <div class="acidjs-shopping-cart-item-display">
+            <div class="acidjs-shopping-cart-dropdown-controls">
+                <ul>
+                    <li>
+                        <button name="remove-from-cart" title="Remove from cart"><span><!-- / --></span></button>
+                    </li>
+                </ul>
+            </div><div class="acidjs-shopping-cart-thumb">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="acidjs-shopping-cart-item-added-tick">
+                    <div><!-- / --></div>
+                </div>
+                <div class="acidjs-shopping-cart-item-details">
+                    <h3 class="acidjs-float-left">
+                        <span class="acidjs-shopping-cart-item-name"><a href="http://html5-cart.com/item-4.html" target="_blank" title="Lorem Ipsum">Lorem Ipsum</a></span></h3>
+                    
+                    <button name="add-to-cart" class="acidjs-float-right" title="Add to Cart"><!-- / --></button>
+                </div>
+            </div>
+        </div>
+        <div class="acidjs-shopping-cart-item-controls">
+            <div class="acidjs-float-left">
+                <em title="Unit price"><span>$</span><b>10.99</b> <span>USD</span></em>
+            </div>
+            <div class="acidjs-float-right">
+                <input data-type="number" type="number" min="1" title="Use the arrow buttons to change the quantity you&#39;d like to buy" data-cart-default-quantity="1" value="1" step="1" name="quantity">
+            </div>
+        </div>
+    </div>
+    <style>
+    /* item-specific styles */
+    .acidjs-shopping-cart-items .item-3ab87f2a-22c7-4a40-a88c-f3b0192725b6 .acidjs-shopping-cart-item-inner-wrapper,
+    .acidjs-shopping-cart-items .item-3ab87f2a-22c7-4a40-a88c-f3b0192725b6 .acidjs-shopping-cart-item-details,
+    .acidjs-shopping-cart-items .item-3ab87f2a-22c7-4a40-a88c-f3b0192725b6 .acidjs-shopping-cart-item-added-tick
+    {
+        background-color: #d39d09;
+    }
+    
+    .acidjs-shopping-cart-items .item-3ab87f2a-22c7-4a40-a88c-f3b0192725b6 .acidjs-shopping-cart-thumb
+    {
+        width: 204px;
+        height: 264px;
+    }
+    
+    .acidjs-shopping-cart-items .item-3ab87f2a-22c7-4a40-a88c-f3b0192725b6 .acidjs-shopping-cart-thumb
+    {
+        background-image: url('images/dummies-11.jpg');
+        border-color: #d39d09;
+    }
+    
+    .acidjs-shopping-cart .item-3ab87f2a-22c7-4a40-a88c-f3b0192725b6 .acidjs-shopping-cart-item-details h3
+    {
+        max-width: 156px;
+    }
+    </style>
+</li><li data-bind="{&quot;index&quot;:&quot;1&quot;}" class="acidjs-shopping-cart-item item-e58ab490-c439-49f9-a721-ba20d0825a8c" data-id="e58ab490-c439-49f9-a721-ba20d0825a8c">
+    <div class="acidjs-shopping-cart-item-inner-wrapper">
+        <div class="acidjs-shopping-cart-item-display">
+            <div class="acidjs-shopping-cart-dropdown-controls">
+                <ul>
+                    <li>
+                        <button name="remove-from-cart" title="Remove from cart"><span><!-- / --></span></button>
+                    </li>
+                </ul>
+            </div><div class="acidjs-shopping-cart-thumb">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <div class="acidjs-shopping-cart-item-added-tick">
+                    <div><!-- / --></div>
+                </div>
+                <div class="acidjs-shopping-cart-item-details">
+                    <h3 class="acidjs-float-left">
+                        <span class="acidjs-shopping-cart-item-name"><a href="http://html5-cart.com/item-1.html" target="_blank" title="Sed ut Perspiciatis">Sed ut Perspiciatis</a></span></h3>
+                    
+                    <button name="add-to-cart" class="acidjs-float-right" title="Add to Cart"><!-- / --></button>
+                </div>
+            </div>
+        </div>
+        <div class="acidjs-shopping-cart-item-controls">
+            <div class="acidjs-float-left">
+                <em title="Unit price"><span>$</span><b>15.99</b> <span>USD</span></em>
+            </div>
+            <div class="acidjs-float-right">
+                <input data-type="number" type="number" min="1" title="Use the arrow buttons to change the quantity you&#39;d like to buy" data-cart-default-quantity="10" value="10" step="1" name="quantity">
+            </div>
+        </div>
+    </div>
+    <style>
+    /* item-specific styles */
+    .acidjs-shopping-cart-items .item-e58ab490-c439-49f9-a721-ba20d0825a8c .acidjs-shopping-cart-item-inner-wrapper,
+    .acidjs-shopping-cart-items .item-e58ab490-c439-49f9-a721-ba20d0825a8c .acidjs-shopping-cart-item-details,
+    .acidjs-shopping-cart-items .item-e58ab490-c439-49f9-a721-ba20d0825a8c .acidjs-shopping-cart-item-added-tick
+    {
+        background-color: #252525;
+    }
+    
+    .acidjs-shopping-cart-items .item-e58ab490-c439-49f9-a721-ba20d0825a8c .acidjs-shopping-cart-thumb
+    {
+        width: 204px;
+        height: 264px;
+    }
+    
+    .acidjs-shopping-cart-items .item-e58ab490-c439-49f9-a721-ba20d0825a8c .acidjs-shopping-cart-thumb
+    {
+        background-image: url('images/dummies-08.jpg');
+        border-color: #252525;
+    }
+    
+    .acidjs-shopping-cart .item-e58ab490-c439-49f9-a721-ba20d0825a8c .acidjs-shopping-cart-item-details h3
+    {
+        max-width: 156px;
+    }
+    </style>
+</li><li data-bind="{&quot;index&quot;:&quot;2&quot;}" class="acidjs-shopping-cart-item item-9a3a0626-19e8-40e0-bd43-eabc1732066c" data-id="9a3a0626-19e8-40e0-bd43-eabc1732066c">
+    <div class="acidjs-shopping-cart-item-inner-wrapper">
+        <div class="acidjs-shopping-cart-item-display">
+            <div class="acidjs-shopping-cart-dropdown-controls">
+                <ul>
+                    <li>
+                        <button name="remove-from-cart" title="Remove from cart"><span><!-- / --></span></button>
+                    </li>
+                </ul>
+            </div><div class="acidjs-shopping-cart-thumb">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="acidjs-shopping-cart-item-added-tick">
+                    <div><!-- / --></div>
+                </div>
+                <div class="acidjs-shopping-cart-item-details">
+                    <h3 class="acidjs-float-left">
+                        <span class="acidjs-shopping-cart-item-name"><a href="http://html5-cart.com/item-2.html" target="_blank" title="Repudiandae sint et Molestiae">Repudiandae sint et Molestiae</a></span></h3>
+                    
+                    <button name="add-to-cart" class="acidjs-float-right" title="Add to Cart"><!-- / --></button>
+                </div>
+            </div>
+        </div>
+        <div class="acidjs-shopping-cart-item-controls">
+            <div class="acidjs-float-left">
+                <em title="Unit price"><span>$</span><b>14.99</b> <span>USD</span></em>
+            </div>
+            <div class="acidjs-float-right">
+                <input data-type="number" type="number" min="1" title="Use the arrow buttons to change the quantity you&#39;d like to buy" data-cart-default-quantity="1" value="1" step="1" name="quantity">
+            </div>
+        </div>
+    </div>
+    <style>
+    /* item-specific styles */
+    .acidjs-shopping-cart-items .item-9a3a0626-19e8-40e0-bd43-eabc1732066c .acidjs-shopping-cart-item-inner-wrapper,
+    .acidjs-shopping-cart-items .item-9a3a0626-19e8-40e0-bd43-eabc1732066c .acidjs-shopping-cart-item-details,
+    .acidjs-shopping-cart-items .item-9a3a0626-19e8-40e0-bd43-eabc1732066c .acidjs-shopping-cart-item-added-tick
+    {
+        background-color: #83ba1f;
+    }
+    
+    .acidjs-shopping-cart-items .item-9a3a0626-19e8-40e0-bd43-eabc1732066c .acidjs-shopping-cart-thumb
+    {
+        width: 204px;
+        height: 264px;
+    }
+    
+    .acidjs-shopping-cart-items .item-9a3a0626-19e8-40e0-bd43-eabc1732066c .acidjs-shopping-cart-thumb
+    {
+        background-image: url('images/dummies-02.jpg');
+        border-color: #83ba1f;
+    }
+    
+    .acidjs-shopping-cart .item-9a3a0626-19e8-40e0-bd43-eabc1732066c .acidjs-shopping-cart-item-details h3
+    {
+        max-width: 156px;
+    }
+    </style>
+</li><li data-bind="{&quot;index&quot;:&quot;3&quot;}" class="acidjs-shopping-cart-item item-d0bad4a1-b500-4b59-8e9d-d0dfe2e31e41" data-id="d0bad4a1-b500-4b59-8e9d-d0dfe2e31e41">
+    <div class="acidjs-shopping-cart-item-inner-wrapper">
+        <div class="acidjs-shopping-cart-item-display">
+            <div class="acidjs-shopping-cart-dropdown-controls">
+                <ul>
+                    <li>
+                        <button name="remove-from-cart" title="Remove from cart"><span><!-- / --></span></button>
+                    </li>
+                </ul>
+            </div><div class="acidjs-shopping-cart-thumb">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                <div class="acidjs-shopping-cart-item-added-tick">
+                    <div><!-- / --></div>
+                </div>
+                <div class="acidjs-shopping-cart-item-details">
+                    <h3 class="acidjs-float-left">
+                        <span class="acidjs-shopping-cart-item-name"><a href="http://html5-cart.com/item-2.html" target="_blank" title="Repudiandae sint et Molestiae">Repudiandae sint et Molestiae</a></span></h3>
+                    
+                    <button name="add-to-cart" class="acidjs-float-right" title="Add to Cart"><!-- / --></button>
+                </div>
+            </div>
+        </div>
+        <div class="acidjs-shopping-cart-item-controls">
+            <div class="acidjs-float-left">
+                <em title="Unit price"><span>$</span><b>12.99</b> <span>USD</span></em>
+            </div>
+            <div class="acidjs-float-right">
+                <input data-type="number" type="number" min="1" title="Use the arrow buttons to change the quantity you&#39;d like to buy" data-cart-default-quantity="1" value="1" step="1" name="quantity">
+            </div>
+        </div>
+    </div>
+    <style>
+    /* item-specific styles */
+    .acidjs-shopping-cart-items .item-d0bad4a1-b500-4b59-8e9d-d0dfe2e31e41 .acidjs-shopping-cart-item-inner-wrapper,
+    .acidjs-shopping-cart-items .item-d0bad4a1-b500-4b59-8e9d-d0dfe2e31e41 .acidjs-shopping-cart-item-details,
+    .acidjs-shopping-cart-items .item-d0bad4a1-b500-4b59-8e9d-d0dfe2e31e41 .acidjs-shopping-cart-item-added-tick
+    {
+        background-color: #b01e00;
+    }
+    
+    .acidjs-shopping-cart-items .item-d0bad4a1-b500-4b59-8e9d-d0dfe2e31e41 .acidjs-shopping-cart-thumb
+    {
+        width: 204px;
+        height: 264px;
+    }
+    
+    .acidjs-shopping-cart-items .item-d0bad4a1-b500-4b59-8e9d-d0dfe2e31e41 .acidjs-shopping-cart-thumb
+    {
+        background-image: url('images/dummies-03.jpg');
+        border-color: #b01e00;
+    }
+    
+    .acidjs-shopping-cart .item-d0bad4a1-b500-4b59-8e9d-d0dfe2e31e41 .acidjs-shopping-cart-item-details h3
+    {
+        max-width: 156px;
+    }
+    </style>
+</li><li data-bind="{&quot;index&quot;:&quot;4&quot;}" class="acidjs-shopping-cart-item item-f374b7f4-c1fe-4403-8705-ede9645a1563" data-id="f374b7f4-c1fe-4403-8705-ede9645a1563">
+    <div class="acidjs-shopping-cart-item-inner-wrapper">
+        <div class="acidjs-shopping-cart-item-display">
+            <div class="acidjs-shopping-cart-dropdown-controls">
+                <ul>
+                    <li>
+                        <button name="remove-from-cart" title="Remove from cart"><span><!-- / --></span></button>
+                    </li>
+                </ul>
+            </div><div class="acidjs-shopping-cart-thumb">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <div class="acidjs-shopping-cart-item-added-tick">
+                    <div><!-- / --></div>
+                </div>
+                <div class="acidjs-shopping-cart-item-details">
+                    <h3 class="acidjs-float-left">
+                        <span class="acidjs-shopping-cart-item-name"><a href="http://html5-cart.com/item-4.html" target="_blank" title="Repudiandae sint et Molestiae">Repudiandae sint et Molestiae</a></span></h3>
+                    
+                    <button name="add-to-cart" class="acidjs-float-right" title="Add to Cart"><!-- / --></button>
+                </div>
+            </div>
+        </div>
+        <div class="acidjs-shopping-cart-item-controls">
+            <div class="acidjs-float-left">
+                <em title="Unit price"><span>$</span><b>30.99</b> <span>USD</span></em>
+            </div>
+            <div class="acidjs-float-right">
+                <input data-type="number" type="number" min="1" title="Use the arrow buttons to change the quantity you&#39;d like to buy" data-cart-default-quantity="1" value="1" step="1" name="quantity">
+            </div>
+        </div>
+    </div>
+    <style>
+    /* item-specific styles */
+    .acidjs-shopping-cart-items .item-f374b7f4-c1fe-4403-8705-ede9645a1563 .acidjs-shopping-cart-item-inner-wrapper,
+    .acidjs-shopping-cart-items .item-f374b7f4-c1fe-4403-8705-ede9645a1563 .acidjs-shopping-cart-item-details,
+    .acidjs-shopping-cart-items .item-f374b7f4-c1fe-4403-8705-ede9645a1563 .acidjs-shopping-cart-item-added-tick
+    {
+        background-color: #006ac1;
+    }
+    
+    .acidjs-shopping-cart-items .item-f374b7f4-c1fe-4403-8705-ede9645a1563 .acidjs-shopping-cart-thumb
+    {
+        width: 204px;
+        height: 264px;
+    }
+    
+    .acidjs-shopping-cart-items .item-f374b7f4-c1fe-4403-8705-ede9645a1563 .acidjs-shopping-cart-thumb
+    {
+        background-image: url('images/dummies-04.jpg');
+        border-color: #006ac1;
+    }
+    
+    .acidjs-shopping-cart .item-f374b7f4-c1fe-4403-8705-ede9645a1563 .acidjs-shopping-cart-item-details h3
+    {
+        max-width: 156px;
+    }
+    </style>
+</li><li data-bind="{&quot;index&quot;:&quot;5&quot;}" class="acidjs-shopping-cart-item item-fbce397d-a955-463a-b4ef-966c52965d62" data-id="fbce397d-a955-463a-b4ef-966c52965d62">
+    <div class="acidjs-shopping-cart-item-inner-wrapper">
+        <div class="acidjs-shopping-cart-item-display">
+            <div class="acidjs-shopping-cart-dropdown-controls">
+                <ul>
+                    <li>
+                        <button name="remove-from-cart" title="Remove from cart"><span><!-- / --></span></button>
+                    </li>
+                </ul>
+            </div><div class="acidjs-shopping-cart-thumb">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="acidjs-shopping-cart-item-added-tick">
+                    <div><!-- / --></div>
+                </div>
+                <div class="acidjs-shopping-cart-item-details">
+                    <h3 class="acidjs-float-left">
+                        <span class="acidjs-shopping-cart-item-name"><a href="http://html5-cart.com/item-4.html" target="_blank" title="Temporibus Autem Quibusdam">Temporibus Autem Quibusdam</a></span></h3>
+                    
+                    <button name="add-to-cart" class="acidjs-float-right" title="Add to Cart"><!-- / --></button>
+                </div>
+            </div>
+        </div>
+        <div class="acidjs-shopping-cart-item-controls">
+            <div class="acidjs-float-left">
+                <em title="Unit price"><span>$</span><b>16.99</b> <span>USD</span></em>
+            </div>
+            <div class="acidjs-float-right">
+                <input data-type="number" type="number" min="1" title="Use the arrow buttons to change the quantity you&#39;d like to buy" data-cart-default-quantity="1" value="1" step="1" name="quantity">
+            </div>
+        </div>
+    </div>
+    <style>
+    /* item-specific styles */
+    .acidjs-shopping-cart-items .item-fbce397d-a955-463a-b4ef-966c52965d62 .acidjs-shopping-cart-item-inner-wrapper,
+    .acidjs-shopping-cart-items .item-fbce397d-a955-463a-b4ef-966c52965d62 .acidjs-shopping-cart-item-details,
+    .acidjs-shopping-cart-items .item-fbce397d-a955-463a-b4ef-966c52965d62 .acidjs-shopping-cart-item-added-tick
+    {
+        background-color: #aa40ff;
+    }
+    
+    .acidjs-shopping-cart-items .item-fbce397d-a955-463a-b4ef-966c52965d62 .acidjs-shopping-cart-thumb
+    {
+        width: 204px;
+        height: 264px;
+    }
+    
+    .acidjs-shopping-cart-items .item-fbce397d-a955-463a-b4ef-966c52965d62 .acidjs-shopping-cart-thumb
+    {
+        background-image: url('images/dummies-05.jpg');
+        border-color: #aa40ff;
+    }
+    
+    .acidjs-shopping-cart .item-fbce397d-a955-463a-b4ef-966c52965d62 .acidjs-shopping-cart-item-details h3
+    {
+        max-width: 156px;
+    }
+    </style>
+</li><li data-bind="{&quot;index&quot;:&quot;6&quot;}" class="acidjs-shopping-cart-item item-275318f8-c08c-4a89-a937-ad81c1cace8f" data-id="275318f8-c08c-4a89-a937-ad81c1cace8f">
+    <div class="acidjs-shopping-cart-item-inner-wrapper">
+        <div class="acidjs-shopping-cart-item-display">
+            <div class="acidjs-shopping-cart-dropdown-controls">
+                <ul>
+                    <li>
+                        <button name="remove-from-cart" title="Remove from cart"><span><!-- / --></span></button>
+                    </li>
+                </ul>
+            </div><div class="acidjs-shopping-cart-thumb">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="acidjs-shopping-cart-item-added-tick">
+                    <div><!-- / --></div>
+                </div>
+                <div class="acidjs-shopping-cart-item-details">
+                    <h3 class="acidjs-float-left">
+                        <span class="acidjs-shopping-cart-item-name"><a href="http://html5-cart.com/item-4.html" target="_blank" title="Nam Libero Tempore">Nam Libero Tempore</a></span></h3>
+                    
+                    <button name="add-to-cart" class="acidjs-float-right" title="Add to Cart"><!-- / --></button>
+                </div>
+            </div>
+        </div>
+        <div class="acidjs-shopping-cart-item-controls">
+            <div class="acidjs-float-left">
+                <em title="Unit price"><span>$</span><b>17.50</b> <span>USD</span></em>
+            </div>
+            <div class="acidjs-float-right">
+                <input data-type="number" type="number" min="1" title="Use the arrow buttons to change the quantity you&#39;d like to buy" data-cart-default-quantity="1" value="1" step="1" name="quantity">
+            </div>
+        </div>
+    </div>
+    <style>
+    /* item-specific styles */
+    .acidjs-shopping-cart-items .item-275318f8-c08c-4a89-a937-ad81c1cace8f .acidjs-shopping-cart-item-inner-wrapper,
+    .acidjs-shopping-cart-items .item-275318f8-c08c-4a89-a937-ad81c1cace8f .acidjs-shopping-cart-item-details,
+    .acidjs-shopping-cart-items .item-275318f8-c08c-4a89-a937-ad81c1cace8f .acidjs-shopping-cart-item-added-tick
+    {
+        background-color: #696969;
+    }
+    
+    .acidjs-shopping-cart-items .item-275318f8-c08c-4a89-a937-ad81c1cace8f .acidjs-shopping-cart-thumb
+    {
+        width: 204px;
+        height: 264px;
+    }
+    
+    .acidjs-shopping-cart-items .item-275318f8-c08c-4a89-a937-ad81c1cace8f .acidjs-shopping-cart-thumb
+    {
+        background-image: url('images/dummies-06.jpg');
+        border-color: #696969;
+    }
+    
+    .acidjs-shopping-cart .item-275318f8-c08c-4a89-a937-ad81c1cace8f .acidjs-shopping-cart-item-details h3
+    {
+        max-width: 156px;
+    }
+    </style>
+</li><li data-bind="{&quot;index&quot;:&quot;7&quot;}" class="acidjs-shopping-cart-item item-f5f79db0-e8ad-4e74-8fc2-7eab2f9c15e4" data-id="f5f79db0-e8ad-4e74-8fc2-7eab2f9c15e4">
+    <div class="acidjs-shopping-cart-item-inner-wrapper">
+        <div class="acidjs-shopping-cart-item-display">
+            <div class="acidjs-shopping-cart-dropdown-controls">
+                <ul>
+                    <li>
+                        <button name="remove-from-cart" title="Remove from cart"><span><!-- / --></span></button>
+                    </li>
+                </ul>
+            </div><div class="acidjs-shopping-cart-thumb">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="acidjs-shopping-cart-item-added-tick">
+                    <div><!-- / --></div>
+                </div>
+                <div class="acidjs-shopping-cart-item-details">
+                    <h3 class="acidjs-float-left">
+                        <span class="acidjs-shopping-cart-item-name"><a href="http://html5-cart.com/item-4.html" target="_blank" title="At vero eos et Accusamus">At vero eos et Accusamus</a></span></h3>
+                    
+                    <button name="add-to-cart" class="acidjs-float-right" title="Add to Cart"><!-- / --></button>
+                </div>
+            </div>
+        </div>
+        <div class="acidjs-shopping-cart-item-controls">
+            <div class="acidjs-float-left">
+                <em title="Unit price"><span>$</span><b>13.25</b> <span>USD</span></em>
+            </div>
+            <div class="acidjs-float-right">
+                <input data-type="number" type="number" min="1" title="Use the arrow buttons to change the quantity you&#39;d like to buy" data-cart-default-quantity="1" value="1" step="1" name="quantity">
+            </div>
+        </div>
+    </div>
+    <style>
+    /* item-specific styles */
+    .acidjs-shopping-cart-items .item-f5f79db0-e8ad-4e74-8fc2-7eab2f9c15e4 .acidjs-shopping-cart-item-inner-wrapper,
+    .acidjs-shopping-cart-items .item-f5f79db0-e8ad-4e74-8fc2-7eab2f9c15e4 .acidjs-shopping-cart-item-details,
+    .acidjs-shopping-cart-items .item-f5f79db0-e8ad-4e74-8fc2-7eab2f9c15e4 .acidjs-shopping-cart-item-added-tick
+    {
+        background-color: #91d100;
+    }
+    
+    .acidjs-shopping-cart-items .item-f5f79db0-e8ad-4e74-8fc2-7eab2f9c15e4 .acidjs-shopping-cart-thumb
+    {
+        width: 204px;
+        height: 264px;
+    }
+    
+    .acidjs-shopping-cart-items .item-f5f79db0-e8ad-4e74-8fc2-7eab2f9c15e4 .acidjs-shopping-cart-thumb
+    {
+        background-image: url('images/dummies-07.jpg');
+        border-color: #91d100;
+    }
+    
+    .acidjs-shopping-cart .item-f5f79db0-e8ad-4e74-8fc2-7eab2f9c15e4 .acidjs-shopping-cart-item-details h3
+    {
+        max-width: 156px;
+    }
+    </style>
+</li><li data-bind="{&quot;index&quot;:&quot;8&quot;}" class="acidjs-shopping-cart-item item-ad941e73-fcfa-4b0e-80a2-f3aad2ed5064" data-id="ad941e73-fcfa-4b0e-80a2-f3aad2ed5064">
+    <div class="acidjs-shopping-cart-item-inner-wrapper">
+        <div class="acidjs-shopping-cart-item-display">
+            <div class="acidjs-shopping-cart-dropdown-controls">
+                <ul>
+                    <li>
+                        <button name="remove-from-cart" title="Remove from cart"><span><!-- / --></span></button>
+                    </li>
+                </ul>
+            </div><div class="acidjs-shopping-cart-thumb">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="acidjs-shopping-cart-item-added-tick">
+                    <div><!-- / --></div>
+                </div>
+                <div class="acidjs-shopping-cart-item-details">
+                    <h3 class="acidjs-float-left">
+                        <span class="acidjs-shopping-cart-item-name"><a href="http://html5-cart.com/Sample%20Item%2009" target="_blank" title="Repudiandae sint et Molestiae">Repudiandae sint et Molestiae</a></span></h3>
+                    
+                    <button name="add-to-cart" class="acidjs-float-right" title="Add to Cart"><!-- / --></button>
+                </div>
+            </div>
+        </div>
+        <div class="acidjs-shopping-cart-item-controls">
+            <div class="acidjs-float-left">
+                <em title="Unit price"><span>$</span><b>11.45</b> <span>USD</span></em>
+            </div>
+            <div class="acidjs-float-right">
+                <input data-type="number" type="number" min="1" title="Use the arrow buttons to change the quantity you&#39;d like to buy" data-cart-default-quantity="1" value="1" step="1" name="quantity">
+            </div>
+        </div>
+    </div>
+    <style>
+    /* item-specific styles */
+    .acidjs-shopping-cart-items .item-ad941e73-fcfa-4b0e-80a2-f3aad2ed5064 .acidjs-shopping-cart-item-inner-wrapper,
+    .acidjs-shopping-cart-items .item-ad941e73-fcfa-4b0e-80a2-f3aad2ed5064 .acidjs-shopping-cart-item-details,
+    .acidjs-shopping-cart-items .item-ad941e73-fcfa-4b0e-80a2-f3aad2ed5064 .acidjs-shopping-cart-item-added-tick
+    {
+        background-color: #4e0038;
+    }
+    
+    .acidjs-shopping-cart-items .item-ad941e73-fcfa-4b0e-80a2-f3aad2ed5064 .acidjs-shopping-cart-thumb
+    {
+        width: 204px;
+        height: 264px;
+    }
+    
+    .acidjs-shopping-cart-items .item-ad941e73-fcfa-4b0e-80a2-f3aad2ed5064 .acidjs-shopping-cart-thumb
+    {
+        background-image: url('images/dummies-01.jpg');
+        border-color: #4e0038;
+    }
+    
+    .acidjs-shopping-cart .item-ad941e73-fcfa-4b0e-80a2-f3aad2ed5064 .acidjs-shopping-cart-item-details h3
+    {
+        max-width: 156px;
+    }
+    </style>
+</li><li data-bind="{&quot;index&quot;:&quot;9&quot;}" class="acidjs-shopping-cart-item item-34864446-468a-4d26-9a2a-595e9a9b375a" data-id="34864446-468a-4d26-9a2a-595e9a9b375a">
+    <div class="acidjs-shopping-cart-item-inner-wrapper">
+        <div class="acidjs-shopping-cart-item-display">
+            <div class="acidjs-shopping-cart-dropdown-controls">
+                <ul>
+                    <li>
+                        <button name="remove-from-cart" title="Remove from cart"><span><!-- / --></span></button>
+                    </li>
+                </ul>
+            </div><div class="acidjs-shopping-cart-thumb">
+                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="acidjs-shopping-cart-item-added-tick">
+                    <div><!-- / --></div>
+                </div>
+                <div class="acidjs-shopping-cart-item-details">
+                    <h3 class="acidjs-float-left">
+                        <span class="acidjs-shopping-cart-item-name"><a href="http://html5-cart.com/Sample%20Item%2010" target="_blank" title="Sed ut Perspiciatis">Sed ut Perspiciatis</a></span></h3>
+                    
+                    <button name="add-to-cart" class="acidjs-float-right" title="Add to Cart"><!-- / --></button>
+                </div>
+            </div>
+        </div>
+        <div class="acidjs-shopping-cart-item-controls">
+            <div class="acidjs-float-left">
+                <em title="Unit price"><span>$</span><b>10.99</b> <span>USD</span></em>
+            </div>
+            <div class="acidjs-float-right">
+                <input data-type="number" type="number" min="1" title="Use the arrow buttons to change the quantity you&#39;d like to buy" data-cart-default-quantity="1" value="1" step="1" name="quantity">
+            </div>
+        </div>
+    </div>
+    <style>
+    /* item-specific styles */
+    .acidjs-shopping-cart-items .item-34864446-468a-4d26-9a2a-595e9a9b375a .acidjs-shopping-cart-item-inner-wrapper,
+    .acidjs-shopping-cart-items .item-34864446-468a-4d26-9a2a-595e9a9b375a .acidjs-shopping-cart-item-details,
+    .acidjs-shopping-cart-items .item-34864446-468a-4d26-9a2a-595e9a9b375a .acidjs-shopping-cart-item-added-tick
+    {
+        background-color: #4617b4;
+    }
+    
+    .acidjs-shopping-cart-items .item-34864446-468a-4d26-9a2a-595e9a9b375a .acidjs-shopping-cart-thumb
+    {
+        width: 204px;
+        height: 264px;
+    }
+    
+    .acidjs-shopping-cart-items .item-34864446-468a-4d26-9a2a-595e9a9b375a .acidjs-shopping-cart-thumb
+    {
+        background-image: url('images/dummies-09.jpg');
+        border-color: #4617b4;
+    }
+    
+    .acidjs-shopping-cart .item-34864446-468a-4d26-9a2a-595e9a9b375a .acidjs-shopping-cart-item-details h3
+    {
+        max-width: 156px;
+    }
+    </style>
+</li></ul>
+</div></div></section></div><footer><ul><li>©2013</li><li><a href="http://wemakesites.net/" target="_blank">About</a></li><li><a href="https://twitter.com/wemakesitesnet" target="_blank">@wemakesitesnet</a></li><li><a href="http://acidmartin.wordpress.com/" target="_blank">Blog</a></li><li><a href="http://semtex.wemakesites.net/" target="_blank">Semtex UI Framework</a></li><li><a href="http://wemakesites.net/#!/contact" target="_blank">Contact</a></li></ul></footer></div><script src="./HTML5 Add to Cart Buttons Demo   HTML5 Shopping Cart Web Component by Martin Ivanov_files/load-js.php"></script><script src="./HTML5 Add to Cart Buttons Demo   HTML5 Shopping Cart Web Component by Martin Ivanov_files/load-js(1).php"></script><script src="./HTML5 Add to Cart Buttons Demo   HTML5 Shopping Cart Web Component by Martin Ivanov_files/load-js(2).php"></script><script src="./HTML5 Add to Cart Buttons Demo   HTML5 Shopping Cart Web Component by Martin Ivanov_files/load-js(3).php"></script><script> (function() { "use strict"; window.site = new AcidJs.Site({ page: "demo-cart-mode", debug: false, cartConfig: {"paymentProvider":"ExampleProvider","cartDataFile":"AcidJs.ShoppingCart\/data\/for-dummies.json","mode":"cart","thumbs":{"width":204,"height":264}} }); })(); </script></body></html>
