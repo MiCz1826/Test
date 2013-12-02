@@ -4,3 +4,7 @@ function addEvent(element, event, delegate ) {
     else 
         element.addEventListener(event, delegate, false);
 }
+addEvent(document, 'readystatechange', function() {
+    if ( document.readyState !== "complete" ) 
+        return true;
+});
