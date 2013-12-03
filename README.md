@@ -1,2 +1,2 @@
-This is a test.
-Another line of text.
+<h1>This is a test.</h1>
+<p>Another line of text.</p>
